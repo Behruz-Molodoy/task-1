@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.game {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.road {
+  position: relative;
+  margin: auto;
+  max-width: 400px;
+  background-image: url('./assets/road-gif.webp');
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.car {
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  left: 50px;
+  top: calc(100vh - 0%);
+  background-image: url('./assets/car.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  transition: top 500ms ease-out;
+}
+
+.sentence {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  max-width: 500px;
+  max-height: 400px;
+  padding: 10px 20px;
+  overflow: hidden;
+  font-size: 22px;
+  font-weight: 600;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 12px;
+  border: 2px solid #e3e3e3;
+}
+
+.finish-flag {
+  display: none;
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  top: calc(100vh - 70%);
+  left: calc(400px - 70%);
+  background-image: url('./assets/finish-flag.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
